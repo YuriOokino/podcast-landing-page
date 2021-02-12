@@ -1,0 +1,166 @@
+body {
+  text-align: left;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: white;
+  background-image: url("images/cloud-computing.svg"),
+                    url("images/cloud-computing.svg"),
+                    url("images/Flat-Mountains.svg");
+  background-size: 170px, 300px, cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:right 300px top 290px,
+                      left 200px top 300px,
+                      center;
+}
+
+h1 {
+  font-family: 'Monoton', cursive;
+  font-weight: 200;
+  font-size: 4em;
+  margin: 0;
+  color: transparent;
+  background-clip: text;
+  background-size: 30%;
+  background-image: linear-gradient(to bottom right,#fc55d2,#77e8fd);
+}
+
+hr {
+  border-style: dotted;
+  border-width: 10px;
+  border-top: none;
+  width: 8%;
+  margin-bottom: 120px;
+  opacity: 40%;
+  color: #BA0382;
+}
+
+h3 {
+  color: #48cae4;
+      font-family: 'Pacifico', cursive;
+  font-size: 2em;
+}
+
+
+p {
+  font-size: 18px;
+  color: grey;
+}
+
+figure {
+  margin: 0;
+}
+
+footer {
+  margin-left: 80px;
+}
+
+
+
+.intro {
+  text-align: center;
+  margin: 150px auto 120px auto;
+  font-size: 20px;
+  width: 40%;
+  line-height: 2;
+}
+
+
+.header {
+  color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  padding: 20px 80px 30px 80px;
+  background-color: #48cae4;
+  background-image: linear-gradient(to bottom right, #48cae4, #AA00AA);
+  letter-spacing: 2px;
+}
+
+.pod {
+  color: white;
+      font-family: 'Pacifico', cursive;
+      font-size: 80px;
+}
+
+.mic {
+  position: absolute;
+  float: right;
+  width: 90px;
+  top: 35px;
+  left: 670px;
+  transform: rotateY(180deg);
+}
+
+.content {
+  padding: 150px 80px 100px 80px;
+}
+
+.cloud {
+  margin-top: 200px;
+  margin-left: 150px;
+  position: fixed;
+  width: 20%;
+  z-index: 2;
+}
+
+.grid-container{
+  display: inline-grid;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+  grid-template-columns: auto auto auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0 50px 50px 50px;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.caption {
+  margin-bottom: 50px;
+  line-height: 1.5;
+  width: 500px;
+}
+
+.audio {
+  display: block;
+  width: 500px;
+  border-radius: 5px;
+height: 15%;
+}
+
+.myButton {
+  display: block;
+  text-align: center;
+	background-color:#ff5bb0;
+	border-radius:6px;
+  margin: auto;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:16px;
+	font-weight:bold;
+	padding:13px 56px;
+	text-decoration:none;
+  width: 50%;
+}
+.myButton:hover {
+	
+	background-color:#ef027d;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.item1 {
+  grid-column: 1;
+}
+
+.item2 {
+  grid-columns: 2;
+}
+
+.credits {
+  color: white;
+  opacity: 70%;
+  font-size: 16px;
+}
