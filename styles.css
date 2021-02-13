@@ -201,9 +201,10 @@ footer {
   .title {
     font-size: 5rem;;
     color: #fc55d2;
+    background-color: #fc55d2;
     width: 100%;
     margin: auto;
-    background-image: none;
+    background-image: transparent;
     background-clip: none;
   }
 
