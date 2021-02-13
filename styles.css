@@ -41,8 +41,6 @@ figure {
   margin: 0;
 }
 
-
-
 .content {
   padding: 150px 80px 100px 80px;
 }
@@ -77,6 +75,7 @@ figure {
   background-clip: text;
   background-size: 100%;
   background-image: linear-gradient(to bottom right,#fc55d2,#ffbe0b);
+  background-color: #fc55d2;
 }
 
 .pod {
@@ -198,11 +197,14 @@ footer {
   .pod {
     color: #48cae4;
   }
+
   .title {
     font-size: 5rem;;
     color: #fc55d2;
     width: 100%;
     margin: auto;
+    background-image: none;
+    background-clip: none;
   }
 
   .mic {
