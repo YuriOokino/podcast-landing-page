@@ -12,6 +12,7 @@ body {
   background-position:right 300px top 290px,
                       left 200px top 300px,
                       center;
+
 }
 
 
@@ -41,6 +42,10 @@ figure {
   margin: 0;
 }
 
+.credits {
+  text-align: center;
+}
+
 .content {
   padding: 150px 80px 100px 80px;
 }
@@ -64,6 +69,7 @@ figure {
   background-image: linear-gradient(to bottom right, #48cae4, #AA00AA);
   letter-spacing: 2px; */
 }
+
 
 .title {
   font-family: 'Monoton', cursive;
@@ -104,19 +110,27 @@ figure {
 
 /*grid-content*/
 
-.grid-container{
-  display: inline-grid;
-  grid-column-gap: 50px;
-  grid-row-gap: 20px;
-  grid-template-columns: auto auto auto;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 0 50px 50px 50px;
-  width: 500px;
-  border-radius: 10px;
+.audio-files{
+  display: flex;
+  flex-direction: row;
+  height: 60%;
+}
+
+
+
+.item1, .item2 {
+background: rgba(255, 255, 255, 0.8);
+border-radius: 10px;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content:space-between;
+padding: 0 40px;
+margin: 0 5%;
+
 }
 
 .caption {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   line-height: 1.5;
   width: 500px;
 }
@@ -125,7 +139,7 @@ figure {
   display: block;
   width: 100%;
   border-radius: 5px;
-  background-color: #ff5bb0;
+  background: #48cae4;
 }
 
 .myButton {
@@ -151,19 +165,10 @@ figure {
 	top:1px;
 }
 
-.item1 {
-  grid-column: 1;
-}
-
-.item2 {
-  grid-columns: 2;
-}
 
 /*footer*/
 
-footer {
-  margin-left: 80px;
-}
+
 
 .credits {
   color: white;
@@ -171,9 +176,13 @@ footer {
   font-size: 16px;
 }
 
-/*media queries*/
+/*tablet*/
 
 @media only screen and (max-width:1480px) {
+
+body {
+  overflow-x: hidden;
+}
 
 .content {
   padding: 20px;
@@ -183,7 +192,7 @@ footer {
     width: 80%;
     text-align: left;
     font-size: 18px;
-    margin-top: 100px;
+    margin: 5% auto 10% auto;
   }
 
   .header {
@@ -191,7 +200,9 @@ footer {
     position: inherit;
     padding: 40px;
     background-color: transparent;
-    text-align: center;
+    text-align: left;
+    max-width: 100%;
+    margin-left: 10%;
   }
 
   .pod {
@@ -199,12 +210,10 @@ footer {
   }
 
   .title {
-    font-size: 5rem;;
+    font-size: 4rem;
     color: #fc55d2;
-    background-color: #fc55d2;
     width: 100%;
-    margin: auto;
-    background-image: transparent;
+    background-image: none;
     background-clip: none;
   }
 
@@ -212,31 +221,92 @@ footer {
     display: none;
   }
 
-  .grid-container {
-    margin: auto;
-    display: block;
-    position: static;
-    box-sizing: content-box;
-    padding: 20px 50px 50px 50px;
-    width: 80%
-
+  .intro {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
+hr {
+  margin-bottom: 5%;
+}
+
+  .audio-files {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+.item1, .item2 {
+  margin-top: 10%;
+}
+
   .caption {
-    width: 90%;
+    width: 100%;
     font-size: 14px;
   }
 
-}
+
+
+/*mobile phone*/
 
 @media only screen and (max-width:730px) {
 
 .title {
-  font-size: 50px;
+  font-size: 2rem;
   text-align: left;
+  max-width: 100%;
+    color: #fc55d2;
+    background-image: none;
+    background-clip: none;
+
 }
+
 .pod {
   font-size: 50px;
+}
+
+body {
+  background-image: none;
+overflow-x: hidden;
+display: flex;
+flex-direction: column;
+align-content: space-around;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+}
+.audio-files {
+  align-content: space-evenly;
+  padding: 5%;
+}
+
+.item1, .item2 {
+  margin: 10% auto;
+  border-style: solid;
+  border-color:  #fc55d2;
+}
+
+.caption {
+  margin: 0 auto 10% auto;
+width: 100%;
+}
+
+hr {
+  margin-bottom: 5% auto 5 auto%;
+}
+
+.intro {
+  margin: 10% auto 10% auto;
+}
+
+
+
+.credits {
+  color: grey;
 }
 
 }
