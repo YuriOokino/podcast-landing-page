@@ -192,8 +192,7 @@ hr {
 }
 
 .main-content {
-  padding: 20px;
-  width: 70%;
+  width: 90%;
   margin: auto;
 
 }
@@ -280,7 +279,6 @@ align-content: space-around;
 }
 .cards {
   align-content: space-evenly;
-  padding: 5%;
 }
 
 .item1, .item2 {
@@ -308,4 +306,5 @@ hr {
 }
 
 }
+
 
