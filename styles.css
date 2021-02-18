@@ -214,6 +214,7 @@ body {
     width: 100%;
     background-image: none;
     background-clip: none;
+	background-color: none;
   }
 
   .mic {
@@ -257,6 +258,7 @@ hr {
     color: #fc55d2;
     background-image: none;
     background-clip: none;
+	background-color: none;
 }
 	
 .header {
