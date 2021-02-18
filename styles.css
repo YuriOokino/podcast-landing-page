@@ -259,9 +259,11 @@ hr {
     color: #fc55d2;
     background-image: none;
     background-clip: none;
-
 }
-
+	
+.header {
+	background-color: none;
+	
 .pod {
   font-size: 50px;
 }
