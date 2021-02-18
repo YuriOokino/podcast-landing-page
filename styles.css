@@ -249,7 +249,7 @@ hr {
 
 /*mobile phone*/
 
-@media only screen and (max-width:730px) {
+@media only screen and (max-width:1000px) {
 
 .title {
   font-size: 2rem;
