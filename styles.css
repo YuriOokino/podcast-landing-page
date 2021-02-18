@@ -65,9 +65,7 @@ figure {
   z-index: 1;
   padding: 20px 80px 30px 80px;
   background-color: #48cae4;
-  /*
-  background-image: linear-gradient(to bottom right, #48cae4, #AA00AA);
-  letter-spacing: 2px; */
+
 }
 
 
@@ -81,7 +79,7 @@ figure {
   background-clip: text;
   background-size: 100%;
   background-image: linear-gradient(to bottom right,#fc55d2,#ffbe0b);
-  background-color: #fc55d2;
+
 }
 
 .pod {
