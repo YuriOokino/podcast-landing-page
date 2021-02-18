@@ -121,11 +121,11 @@ figure {
   width: 500px;
 }
 
-.audio {
+.audio-element {
   display: block;
-  width: 500px;
+  width: 100%;
   border-radius: 5px;
-height: 15%;
+  background-color: #ff5bb0;
 }
 
 .myButton {
