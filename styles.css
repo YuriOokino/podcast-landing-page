@@ -1,6 +1,8 @@
 body {
   text-align: left;
   margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   background-color: white;
   background-image: url("images/cloud-computing.svg"),
@@ -26,10 +28,11 @@ hr {
   color: #BA0382;
 }
 
-h3 {
+.card-title {
   color: #48cae4;
       font-family: 'Pacifico', cursive;
   font-size: 2em;
+  margin-top: 0;
 }
 
 
@@ -38,15 +41,12 @@ p {
   color: grey;
 }
 
-figure {
-  margin: 0;
-}
 
 .credits {
   text-align: center;
 }
 
-.content {
+.main-content {
   padding: 150px 80px 100px 80px;
 }
 
@@ -65,9 +65,8 @@ figure {
   z-index: 1;
   padding: 20px 80px 30px 80px;
   background-color: #48cae4;
-
+  box-sizing: border-box;
 }
-
 
 .title {
   font-family: 'Monoton', cursive;
@@ -106,14 +105,13 @@ figure {
 }
 
 
-/*grid-content*/
+/*audio cards*/
 
-.audio-files{
+.cards{
   display: flex;
   flex-direction: row;
-  height: 60%;
+  padding-bottom: 20px;
 }
-
 
 
 .item1, .item2 {
@@ -122,7 +120,7 @@ border-radius: 10px;
 flex-wrap: wrap;
 align-items: flex-start;
 justify-content:space-between;
-padding: 0 40px;
+padding: 40px;
 margin: 0 5%;
 
 }
@@ -166,8 +164,6 @@ margin: 0 5%;
 
 /*footer*/
 
-
-
 .credits {
   color: white;
   opacity: 70%;
@@ -182,26 +178,25 @@ body {
   overflow-x: hidden;
 }
 
-.content {
-  padding: 20px;
+hr {
+  margin-bottom: 5%;
 }
 
-  .intro {
-    width: 80%;
-    text-align: left;
-    font-size: 18px;
-    margin: 5% auto 10% auto;
-  }
+.header {
+  margin: auto;
+  position: inherit;
+  padding: 40px;
+  background-color: transparent;
+  text-align: left;
+  max-width: 100%;
+}
 
-  .header {
-    margin: auto;
-    position: inherit;
-    padding: 40px;
-    background-color: transparent;
-    text-align: left;
-    max-width: 100%;
-    margin-left: 10%;
-  }
+.main-content {
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+
+}
 
   .pod {
     color: #48cae4;
@@ -210,11 +205,12 @@ body {
 .title {
     font-size: 4rem;
     color: #fc55d2;
-    background-clip: none;
-    width: 100%;
+    max-width: 100%;
     background-image: none;
-    background-clip: none;
-	background-color: none;
+    background: none;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
   }
 
   .mic {
@@ -222,15 +218,14 @@ body {
   }
 
   .intro {
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    margin: 5% auto 10% auto;
   }
 
-hr {
-  margin-bottom: 5%;
-}
 
-  .audio-files {
+  .cards {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -249,21 +244,22 @@ hr {
 
 /*mobile phone*/
 
-@media only screen and (max-width:1080px) {
+@media only screen and (max-width:760px) {
 
 .title {
   font-size: 2rem;
-  text-align: left;
+  text-align: center;
   max-width: 100%;
     color: #fc55d2;
     background-image: none;
-    background-clip: none;
-	background-color: none;
+    overflow: hidden;
 }
-	
+
 .header {
-	background-color: none;
-	
+
+  width: 100%;
+}
+
 .pod {
   font-size: 50px;
 }
@@ -276,13 +272,13 @@ flex-direction: column;
 align-content: space-around;
 }
 
-.content {
+.main-content {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: auto;
 
 }
-.audio-files {
+.cards {
   align-content: space-evenly;
   padding: 5%;
 }
@@ -304,12 +300,12 @@ hr {
 
 .intro {
   margin: 10% auto 10% auto;
+  text-align: left;
 }
-
-
 
 .credits {
   color: grey;
 }
 
 }
+
