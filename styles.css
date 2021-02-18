@@ -209,9 +209,10 @@ body {
     color: #48cae4;
   }
 
-  .title {
+.title {
     font-size: 4rem;
     color: #fc55d2;
+    background-clip: none;
     width: 100%;
     background-image: none;
     background-clip: none;
