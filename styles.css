@@ -238,7 +238,10 @@ padding: 100px 40px;
     display: flex;
     flex-direction: column;
   }
-
+.caption-img {
+	display: none;
+}
+	
 .item1, .item2 {
   margin-top: 10%;
 }
