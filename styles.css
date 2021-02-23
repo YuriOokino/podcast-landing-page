@@ -126,12 +126,7 @@ margin: 0 5%;
 
 }
 
-.caption-img {
-  float: left;
-  width: 100px;
-  margin-right: 20px;
-  border-radius: 5px;
-}
+
 
 .caption {
   margin-bottom: 40px;
@@ -139,12 +134,7 @@ margin: 0 5%;
   width: 500px;
 }
 
-.audio-element {
-  display: block;
-  width: 100%;
-  border-radius: 5px;
-  background: #48cae4;
-}
+
 
 .myButton {
   display: block;
@@ -238,8 +228,10 @@ padding: 100px 40px;
     display: flex;
     flex-direction: column;
   }
-.caption-img {
-	display: none;
+
+	
+.audio-file {
+  height: 100%;
 }
 	
 .item1, .item2 {
@@ -289,8 +281,8 @@ width: 100%;
   align-content: space-evenly;
 }
 
-.caption-img {
-  display: none;
+.audio-file {
+  height: 102px;
 }
 	
 .item1, .item2 {
