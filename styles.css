@@ -3,6 +3,7 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+
   font-family: 'Lato', sans-serif;
   background-color: white;
   background-image: url("images/cloud-computing.svg"),
@@ -125,6 +126,13 @@ margin: 0 5%;
 
 }
 
+.caption-img {
+  float: left;
+  width: 100px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
 .caption {
   margin-bottom: 40px;
   line-height: 1.5;
@@ -194,7 +202,8 @@ hr {
 .main-content {
   width: 90%;
   margin: auto;
-
+box-sizing: border-box;
+padding: 100px 40px;
 }
 
   .pod {
@@ -251,13 +260,8 @@ hr {
   max-width: 100%;
     color: #fc55d2;
     background-image: none;
-    overflow: hidden;
 }
 
-.header {
-
-  width: 100%;
-}
 
 .pod {
   font-size: 50px;
@@ -265,18 +269,19 @@ hr {
 
 body {
   background-image: none;
-overflow-x: hidden;
 display: flex;
 flex-direction: column;
 align-content: space-around;
+
 }
 
 .main-content {
   display: flex;
   flex-direction: column;
   margin: auto;
-
+width: 100%;
 }
+
 .cards {
   align-content: space-evenly;
 }
@@ -299,6 +304,7 @@ hr {
 .intro {
   margin: 10% auto 10% auto;
   text-align: left;
+  width: 100%;
 }
 
 .credits {
@@ -306,5 +312,6 @@ hr {
 }
 
 }
+
 
 
