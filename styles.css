@@ -1,4 +1,4 @@
-body {
+ody {
   text-align: left;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -79,6 +79,9 @@ p {
   background-clip: text;
   background-size: 100%;
   background-image: linear-gradient(to bottom right,#fc55d2,#ffbe0b);
+  background-image: -webkit-linear-gradient(to bottom right,#fc55d2,#ffbe0b);
+  background-color: #fc55d2;
+
 
 }
 
@@ -109,24 +112,20 @@ p {
 /*audio cards*/
 
 .cards{
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  column-gap: 3%;
+
 }
 
 
-.item1, .item2 {
+.item1, .item2, .item3 {
 background: rgba(255, 255, 255, 0.8);
 border-radius: 10px;
-flex-wrap: wrap;
-align-items: flex-start;
-justify-content:space-between;
 padding: 40px;
-margin: 0 5%;
+min-width: 0;
 
 }
-
-
 
 .caption {
   margin-bottom: 40px;
@@ -134,7 +133,9 @@ margin: 0 5%;
   width: 500px;
 }
 
-
+.audio-file {
+  width: 100%;
+}
 
 .myButton {
   display: block;
@@ -170,11 +171,8 @@ margin: 0 5%;
 
 /*tablet*/
 
-@media only screen and (max-width:1480px) {
+@media only screen and (max-width:1700px) {
 
-body {
-  overflow-x: hidden;
-}
 
 hr {
   margin-bottom: 5%;
@@ -225,17 +223,24 @@ padding: 100px 40px;
 
   .cards {
     margin: auto;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width:0;
   }
 
-	
-.audio-file {
-  height: 100%;
-}
-	
-.item1, .item2 {
+.item1, .item2, .item3 {
   margin-top: 10%;
+}
+.item1 {
+  overflow: hidden;
+}
+
+.item2 {
+  overflow: hidden;
+}
+
+.item3 {
+  overflow: hidden;
 }
 
   .caption {
@@ -243,14 +248,16 @@ padding: 100px 40px;
     font-size: 14px;
   }
 
-
+.audio-file {
+  height: 100%;
+}
 
 /*mobile phone*/
 
 @media only screen and (max-width:760px) {
 
 .title {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   max-width: 100%;
     color: #fc55d2;
@@ -259,7 +266,7 @@ padding: 100px 40px;
 
 
 .pod {
-  font-size: 50px;
+  font-size: 3rem;
 }
 
 body {
@@ -275,25 +282,32 @@ align-content: space-around;
   flex-direction: column;
   margin: auto;
 width: 100%;
+padding-top: 20px;
 }
 
 .cards {
   align-content: space-evenly;
 }
 
-.audio-file {
-  height: 102px;
-}
-	
-.item1, .item2 {
+
+.item1, .item2, .item3 {
   margin: 10% auto;
   border-style: solid;
   border-color:  #fc55d2;
+
 }
 
 .caption {
   margin: 0 auto 10% auto;
 width: 100%;
+
+}
+.caption p {
+  font-size: 1.5rem;
+}
+
+.audio-file {
+  height: 102px;
 }
 
 hr {
@@ -302,8 +316,8 @@ hr {
 
 .intro {
   margin: 10% auto 10% auto;
-  text-align: left;
   width: 100%;
+  font-size: 1.5rem;
 }
 
 .credits {
@@ -311,6 +325,4 @@ hr {
 }
 
 }
-
-
 
