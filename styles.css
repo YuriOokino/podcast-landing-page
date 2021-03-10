@@ -114,6 +114,7 @@ p {
   display: grid;
   grid-template-columns: repeat(3,auto);
   column-gap: 3%;
+row-gap: 3%;
 
 }
 
